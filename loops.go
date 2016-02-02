@@ -23,4 +23,24 @@ func main() {
     fmt.Println("again!")
     break
   }
+  
+  /*
+    If/else if/else conditionals are similar to Javascript in Go.
+    But like for loops, they don't require parenthesis.
+  */
+  
+  if 7 % 2 == 0 {
+    fmt.Println("7 is even")
+  } else {
+    fmt.Println("7 is odd")
+  }
+  
+  // We can also declare variables before/in a conditional:
+  if num := 9; num < 0 {
+    fmt.Println(num, " is negative")
+  } else if num < 10 {
+    fmt.Println(num, " has 1 digit")
+  } else {
+    fmt.Println(num, " has multiple digits")
+  }
 }
