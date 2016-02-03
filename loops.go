@@ -57,6 +57,8 @@ func main() {
   switch {
     case t.Hour() < 12:
       fmt.Println("it's before noon")
+    case t.Hour() == 12:
+      fmt.Println("it's noon!")
     default:
       fmt.Println("it's after noon")
   }
